@@ -1,0 +1,15 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "ChatGPT Plugin",
+  "name_for_model": "chatgpt_plugin",
+  "description_for_human": "This plugin enhances ChatGPT by adding custom data handling features.",
+  "description_for_model": "Enhances ChatGPT with custom data processing.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://dannyplugmein.github.io/new-exm-wiz/openapi.yaml",
+    "is_user_authenticated": false
+  }
+}
