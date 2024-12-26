@@ -10,11 +10,15 @@ paths:
   /placeholder:
     get:
       operationId: "getPlaceholder"
-      summary: "Placeholder endpoint for a valid OpenAPI spec"
-      description: "This path is just a placeholder to keep the spec valid, demonstrating how the API might be structured."
+      summary: "Static placeholder endpoint"
+      description: "This endpoint returns a static response to demonstrate functionality for ChatGPT plugins."
       responses:
         "200":
           description: "Successful retrieval of the placeholder data."
+          content:
+            application/json:
+              example:
+                message: "This is a static response from the placeholder endpoint."
 x-instructions: |
   MEDICAL TERMINOLOGY GPT – FINAL POLICY
 
