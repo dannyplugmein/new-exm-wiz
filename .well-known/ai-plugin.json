@@ -9,7 +9,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://dannyplugmein.github.io/new-exm-wiz/openapi.yaml",
+    "url": "https://dannyplugmein.com/openapi.yaml",
     "is_user_authenticated": false
   }
 }
