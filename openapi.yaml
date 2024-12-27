@@ -3,9 +3,10 @@ info:
   title: "Medical Terminology GPT"
   version: "1.0.0"
   description: >
-    A specialized GPT model that only references four specific Medical Terminology chapters. This API serves as a placeholder and instructional framework for handling requests specific to these chapters.
+    A specialized GPT model that only references four specific Medical Terminology chapters. 
+    This API serves as a placeholder and instructional framework for handling requests specific to these chapters.
 servers:
-  - url: "https://dannyplugmein.com"
+  - url: "https://dannyplugmein.com"  # Update if your custom domain is different
 paths:
   /placeholder:
     get:
@@ -19,6 +20,28 @@ paths:
             application/json:
               example:
                 message: "This is a static response from the placeholder endpoint."
+
+  /terms:
+    get:
+      operationId: "getTerms"
+      summary: "Fetches the entire terms.json content"
+      description: "This endpoint returns a JSON object with all medical terms, definitions, and sources."
+      responses:
+        "200":
+          description: "A JSON object of terms from terms.json."
+          content:
+            application/json:
+              schema:
+                type: object
+                description: "Key-value pairs, where the key is a medical term and the value has 'definition' and 'source'."
+              example:
+                -itis:
+                  definition: "Inflammation"
+                  source: "From CHAPTER 1, page 6: '...verbatim text about -itis...' "
+                -megaly:
+                  definition: "Enlargement"
+                  source: "From CHAPTER 2, page 24: '...verbatim text about -megaly...' "
+
 x-instructions: |
   MEDICAL TERMINOLOGY GPT – FINAL POLICY
 
