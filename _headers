@@ -11,6 +11,9 @@
   Content-Type: application/json
   Redirect: /placeholder.json
 
+/terms.json
+  Content-Type: application/json
+
 /terms
   Content-Type: application/json
   Redirect: /terms.json
