@@ -6,7 +6,7 @@ info:
     A specialized GPT model that only references four specific Medical Terminology chapters.
     This API serves as a placeholder and instructional framework for handling requests specific to these chapters.
 servers:
-  - url: "https://dannyplugmein.com"  # Make sure this is your custom domain
+  - url: "https://dannyplugmein.com"  # Keep your custom domain here
 paths:
   /placeholder:
     get:
@@ -21,11 +21,11 @@ paths:
               example:
                 message: "This is a static response from the placeholder endpoint."
 
-  /terms:
+  /terms.json:
     get:
       operationId: "getTerms"
-      summary: "Fetches the entire terms.json content"
-      description: "Returns a JSON object with medical terms, definitions, and sources from terms.json."
+      summary: "Fetch terms.json"
+      description: "Returns the entire terms.json content for medical terms, definitions, and sources."
       responses:
         "200":
           description: "A JSON object of terms from terms.json."
