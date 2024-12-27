@@ -5,7 +5,7 @@ info:
   description: >
     A specialized GPT model that only references four specific Medical Terminology chapters. This API serves as a placeholder and instructional framework for handling requests specific to these chapters.
 servers:
-  - url: "https://dannyplugmein.github.io/new-exm-wiz"
+  - url: "https://dannyplugmein.github.io"
 paths:
   /placeholder:
     get:
