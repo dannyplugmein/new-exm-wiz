@@ -1,6 +1,16 @@
+/.well-known/ai-plugin.json
+  Content-Type: application/json
+
+/openapi.yaml
+  Content-Type: text/yaml
+
 /placeholder.json
   Content-Type: application/json
 
 /placeholder
   Content-Type: application/json
   Redirect: /placeholder.json
+
+/terms
+  Content-Type: application/json
+  Redirect: /terms.json
