@@ -13,7 +13,3 @@
 
 /terms.json
   Content-Type: application/json
-
-/terms
-  Content-Type: application/json
-  Redirect: /terms.json
